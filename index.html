@@ -13,6 +13,31 @@
   <title>Noah Pepe - The $RAIN Maker</title>
   <link rel="icon" type="image/png" href="noahpepe.png" />
   <style>
+    .rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 2px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1); /* light rain color */
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -104,6 +129,19 @@ body {
   </style>
 </head>
 <body>
+  <div class="rain">
+  <script>
+    for (let i = 0; i < 100; i++) {
+      const drop = document.createElement('div');
+      drop.className = 'drop';
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = 0.5 + Math.random() * 1.5 + 's';
+      drop.style.animationDelay = Math.random() * 5 + 's';
+      document.querySelector('.rain').appendChild(drop);
+    }
+  </script>
+</div>
+
   <header>
     <div class="title">Noah Pepe – The $RAIN Maker</div>
     <div class="link-buttons">
