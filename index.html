@@ -40,17 +40,21 @@
 .frog-name {
   font-family: 'Baloo 2', cursive;
   font-size: 2.5em;
-  color: #00ff66; /* Vivid green */
-  font-weight: 1400;
+  color: #00ff66; /* Rich green base */
+  font-weight: 800;
   letter-spacing: 0.05em;
   text-shadow:
-    1px 1px 0 #b38600,
-    2px 2px 0 #cc9900,
-    3px 3px 0 #996600,
-    4px 4px 1px #664400,
-    5px 5px 1px rgba(255, 191, 0, 0.8),
-    6px 6px 2px rgba(255, 170, 0, 0.6),
-    -1px -1px 1px rgba(255, 255, 255, 0.15); /* highlight from top-left */
+    /* 3D LIFT */
+    2px 2px 0 #b38600,
+    3px 3px 0 #cc9900,
+    4px 4px 1px #996600,
+    5px 5px 1px #664400,
+    /* SOFT WHITE EDGE HIGHLIGHT */
+    -1px -1px 1px rgba(255, 255, 255, 0.15),
+    /* 🔥 GLOW — moved to outer layers, more radius */
+    0 0 8px #ffcc33,
+    0 0 12px #ffb300,
+    0 0 18px #ffaa00;
 }
 
 .title-tagline {
