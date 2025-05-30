@@ -23,7 +23,7 @@
     header {
       background: url('ark-banner.jpg') no-repeat center center;
       background-size: cover;
-      height: 90vh;
+      height: 65vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -31,19 +31,19 @@
       padding: 20px;
     }
     .title {
-      font-size: 3em;
+      font-size: 2.5em;
       font-weight: bold;
       text-shadow: 2px 2px 5px #000;
     }
     .link-buttons {
-      margin-top: 20px;
+      margin-top: 15px;
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
       justify-content: center;
     }
     .cta-button {
-      padding: 12px 24px;
+      padding: 10px 20px;
       font-size: 1em;
       background-color: #ffd700;
       color: black;
@@ -54,18 +54,18 @@
     }
     .hero-image {
       width: 250px;
-      margin: 40px auto 20px;
+      margin: 30px auto 20px;
     }
-    .readme-section {
+    .content-section {
       padding: 40px 20px;
       background-color: #1a1a1a;
       color: #dddddd;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto 40px;
       text-align: left;
       border-radius: 10px;
     }
-    .readme-section h2 {
+    .content-section h2 {
       text-align: center;
       color: #ffd700;
     }
@@ -74,6 +74,17 @@
       display: block;
       max-width: 90%;
       height: auto;
+    }
+    .nav-overview {
+      background-color: #222;
+      padding: 10px 0;
+      margin-top: 30px;
+    }
+    .nav-overview a {
+      color: #00ffcc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
     footer {
       background-color: #111;
@@ -95,22 +106,53 @@
 
   <img class="hero-image" src="noah-pepe.png" alt="Noah Pepe" />
 
-  <div class="readme-section">
-    <h2>Project Overview</h2>
-    <p>$RAIN is the people's meme project. No rugs. No scams. 100% receipts. Our mission is simple: reward transparency, build faith, and help degens recover from the flood of failures on the chain. Noah Pepe is here to lead us out of the storm and into the promised moon. We don't run. We don't dump. We BUILD THE ARK.</p>
-    <p>Join us in making it $RAIN. 🌧️🛳️🐸</p>
+  <div class="nav-overview">
+    <a href="#what">What’s on this page</a>
+    <a href="#rain">What is $RAIN</a>
+    <a href="#devtax">Dev Tax Rules</a>
+    <a href="#contribute">How to Contribute</a>
+  </div>
 
-    <h2>README Summary</h2>
-    <p>Noah Pepe and $RAIN represent a revolution in meme coin culture. This project is focused on real community, transparent dev actions, and sustainable growth. Built on Solana, $RAIN has zero mint functions, time-based tax unlocks, and holder rewards from volume-based milestones. Our dev wallet rules are fixed, published, and enforced by community trust. We’re not here to hype and dump — we’re here to heal the chain and reward resilience.</p>
+  <div class="content-section" id="what">
+    <h2>What’s on this Page</h2>
+    <p>This is your comprehensive guide to $RAIN. Learn about the mission, tokenomics, dev rules, and how to join the ark. You’ll also find links to our community, chart, and contribution options.</p>
+  </div>
 
+  <div class="content-section" id="rain">
+    <h2>What is $RAIN?</h2>
+    <p>$RAIN is a community-first meme project built on Solana. With no rugs, no scams, and 100% transparency, it’s built to reward loyalty and rebuild trust in meme coin culture. Noah Pepe leads the charge — a wise frog guiding us through the flood of broken projects toward sustainable growth and faith-based fun.</p>
+  </div>
+
+  <div class="content-section" id="devtax">
     <h2>Dev Tax Rules</h2>
-    <p>At every 25K volume milestone, 0.75% of the total token supply (up to that point) is unlocked as dev tax. These tokens may be sold in small chunks or at strategic intervals (e.g., every 100K in volume) to protect the chart. Remaining tax allocation is split at 100K volume checkpoints as follows:</p>
+    <p>Here’s how we do it differently:</p>
     <ul>
-      <li>0.5% redistributed to community (contests, holders, raiders)</li>
-      <li>0.1% permanently burned</li>
-      <li>0.15% added to locked liquidity</li>
+      <li><strong>0.75% of tokens unlocked</strong> per 25K in volume (dev tax)</li>
+      <li>Dev sells capped at each 25K volume to reduce chart impact</li>
+      <li>Every 100K in volume triggers redistribution of another 0.75% of supply:</li>
+      <ul>
+        <li>0.5% to community contests, holders, raiders</li>
+        <li>0.1% permanently burned</li>
+        <li>0.15% added to locked LP</li>
+      </ul>
     </ul>
-    <img class="tokenomics-img" src="token.png" alt="Dev Tax Tokenomics" />
+    <p>Chart-friendly. Volume-based. Community-powered. No surprises.</p>
+    <img class="tokenomics-img" src="token.png" alt="Dev Tax Chart" />
+    <p><strong>Total Burned $RAIN:</strong> [Add live stat here]</p>
+    <p><strong>Total Added LP:</strong> [Add live stat here]</p>
+    <p><strong>LP Wallet:</strong> [Insert wallet link here]</p>
+  </div>
+
+  <div class="content-section" id="contribute">
+    <h2>How to Contribute</h2>
+    <p>Want to help us build the ark?</p>
+    <ul>
+      <li>Shill $RAIN on X using memes, posts, and tags</li>
+      <li>Join Telegram to raid, chat, and strategize</li>
+      <li>Hold $RAIN to qualify for contest rewards</li>
+      <li>Help grow responsibly — we reward creativity, consistency, and community</li>
+    </ul>
+    <p>We’re building something real. Make it $RAIN 🌧️🛳️🐸</p>
   </div>
 
   <footer>
@@ -118,5 +160,3 @@
   </footer>
 </body>
 </html>
-
-
