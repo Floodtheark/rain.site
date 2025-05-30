@@ -13,6 +13,30 @@
   <title>Noah Pepe - The $RAIN Maker</title>
   <link rel="icon" type="image/png" href="noahpepe.png" />
   <style>
+    .coin-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.coin {
+  position: absolute;
+  top: -50px;
+  font-size: 24px;
+  animation: drop-coin linear infinite;
+}
+
+@keyframes drop-coin {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
     .rain {
   position: fixed;
   top: 0;
@@ -149,6 +173,23 @@ body {
   </style>
 </head>
 <body>
+  <div class="coin-rain" id="coinContainer"></div>
+
+<script>
+  const coinContainer = document.getElementById('coinContainer');
+
+  for (let i = 0; i < 60; i++) {
+    const coin = document.createElement('div');
+    coin.className = 'coin';
+    coin.innerText = '🪙'; // You can use an image instead
+    coin.style.left = Math.random() * 100 + 'vw';
+    coin.style.animationDuration = 2 + Math.random() * 3 + 's';
+    coin.style.animationDelay = Math.random() * 5 + 's';
+    coin.style.fontSize = (20 + Math.random() * 20) + 'px';
+    coinContainer.appendChild(coin);
+  }
+</script>
+
   <div class="rain">
   <script>
     for (let i = 0; i < 100; i++) {
