@@ -13,24 +13,16 @@
   <title>Noah Pepe - The $RAIN Maker</title>
   <link rel="icon" type="image/png" href="noahpepe.png" />
   <style>
-@keyframes shimmer {
-  0% {
-    opacity: 0.85;
-    text-shadow: 0 0 2px #1E90FF;
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 4px #1E90FF;
-  }
-  100% {
-    opacity: 0.85;
-    text-shadow: 0 0 2px #1E90FF;
-  }
+@keyframes colorCycle {
+  0%   { color: #1E90FF; }
+  25%  { color: #00BFFF; }
+  50%  { color: #00CED1; }
+  75%  { color: #00FFFF; }
+  100% { color: #1E90FF; }
 }
 
 .shimmer {
-  animation: shimmer 4s infinite ease-in-out;
-  color: #1E90FF;
+  animation: colorCycle 6s infinite ease-in-out;
   font-weight: 600;
 }
 
