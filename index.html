@@ -13,6 +13,53 @@
   <title>Noah Pepe - The $RAIN Maker</title>
   <link rel="icon" type="image/png" href="noahpepe.png" />
   <style>
+    .stats-panel {
+  margin: 60px auto;
+  padding: 40px 20px;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #00ffcc;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+}
+
+.stats-panel h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffd700;
+  text-shadow: 1px 1px 6px #000;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.stat-box {
+  flex: 1 1 180px;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #00ffcc;
+}
+
+.stat-box .label {
+  display: block;
+  font-size: 1em;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.stat-box .value {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
     .coin-rain {
   position: fixed;
   top: 0;
@@ -213,6 +260,17 @@ body {
   </header>
 
   <img class="hero-image" src="noah-pepe.png" alt="Noah Pepe" />
+  <section class="stats-panel">
+  <h2>$RAIN Live Stats</h2>
+  <div class="stats-grid">
+    <div class="stat-box"><span class="label">💰 24h Volume</span><span class="value">$428,913</span></div>
+    <div class="stat-box"><span class="label">🧮 Market Cap</span><span class="value">$1,750,240</span></div>
+    <div class="stat-box"><span class="label">🔥 Total Burned</span><span class="value">$31,420</span></div>
+    <div class="stat-box"><span class="label">💧 LP Added</span><span class="value">$9,110</span></div>
+    <div class="stat-box"><span class="label">🧍‍♂️ Total Holders</span><span class="value">5,732</span></div>
+  </div>
+</section>
+
 
   <div class="nav-overview">
     <a href="#what">What’s on this page</a>
