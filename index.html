@@ -26,17 +26,12 @@
   100% { color: #1E90FF; }   /* Back to DodgerBlue */
 }
 
-.shimmer {
-  animation: shimmer 1.5s infinite linear;
-  background: linear-gradient(to right, #ffffff 0%, #00f0ff 50%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% auto;
-
-  /* 💙 Soft Dodger Blue Glow — toned way down */
+.glow-rain {
+  font-weight: bold;
+  animation: colorCycle 4s infinite;
   text-shadow:
-    0 0 3px #1e90ff,
-    0 0 6px #1e90ff;
+    0 0 4px currentColor,
+    0 0 8px currentColor;
 }
 
 @keyframes shimmer {
