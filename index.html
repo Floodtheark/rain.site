@@ -27,9 +27,16 @@
 }
 
 .shimmer {
-  font-family: 'Orbitron', sans-serif;
-  animation: colorCycle 6s infinite ease-in-out;
-  font-weight: 800;
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(to right, #ffffff 0%, #00f0ff 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+}
+
+@keyframes shimmer {
+  0% { background-position: -100% 0; }
+  100% { background-position: 100% 0; }
 }
 
 .frog-name {
