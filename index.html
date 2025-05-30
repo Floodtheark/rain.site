@@ -13,6 +13,29 @@
   <title>Noah Pepe - The $RAIN Maker</title>
   <link rel="icon" type="image/png" href="noahpepe.png" />
   <style>
+    @keyframes dripPulse {
+  0% {
+    box-shadow: 0 0 0px rgba(0, 255, 204, 0.0);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.75);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(0, 255, 204, 0.0);
+  }
+}
+
+.stat-box {
+  flex: 1 1 180px;
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #00ffcc;
+  animation: dripPulse 3s infinite ease-in-out;
+}
+
     .stats-panel {
   margin: 60px auto;
   padding: 40px 20px;
