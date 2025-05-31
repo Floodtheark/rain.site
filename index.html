@@ -560,21 +560,51 @@ body {
       z-index: 1;
       position: relative;
     }
-    @media (max-width: 600px) {
+  @media (max-width: 600px) {
   .title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-top: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    padding-top: 0.75rem;
+  }
+
+  .frog-name {
+    font-size: 1rem;
+  }
+
+  .title-tagline {
+    font-size: 1rem;
+  }
+
+  .nav-overview {
+    padding: 0.5rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-overview a {
+    font-size: 1rem;
+    padding: 0.4rem 0.75rem;
   }
 
   .link-buttons {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     gap: 1.25rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   .rain-button {
-    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .tokenomics-img {
+    max-width: 90%;
   }
 }
     footer {
