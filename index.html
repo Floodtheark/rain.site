@@ -305,6 +305,7 @@
   top: -50px;
   font-size: 24px;
   animation: drop-coin linear infinite;
+  z-index: 0;
 }
 
 @keyframes drop-coin {
@@ -330,6 +331,7 @@
   height: 60px;
   background: rgba(255, 255, 255, 0.1); /* light rain color */
   animation: fall linear infinite;
+  z-index: 0;
 }
 
 @keyframes fall {
@@ -498,18 +500,11 @@ body {
    </div>
 
   <div class="image-frame">
-    <div class="meme-carousel" style="background: #111; border: 4px solid lime; padding: 20px; margin: 20px auto;">
-  <div class="carousel-track" style="display: flex; gap: 10px;">
-    <p style="color:white; font-weight: bold;">🚨 If you can read this, the meme carousel is visible.</p>
-    <img src="noah-pepe.png" alt="Test image" style="width: 100px; border: 2px solid red;">
-  </div>
-</div>
    <img src="noah-pepe.png" alt="Noah Pepe" class="hero-image">
   </div>
   
   <div class="meme-carousel">
    <div class="carousel-track">
-     <p style="color:white; font-weight: bold;">🚨 If you can read this, the carousel is visible</p>
      <img src="meme6.png" alt="meme6">
      <img src="meme2.png" alt="meme2">
      <img src="meme3.png" alt="meme3">
