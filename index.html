@@ -464,12 +464,14 @@ body {
       font-weight: bold;
       text-shadow: 2px 2px 5px #000;
     }
-  .link-buttons {
-  margin-top: 15px;
+.link-buttons {
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  flex-direction: row; /* ✅ Required */
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem auto;
   z-index: 1;
   position: relative;
 }
