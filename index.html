@@ -17,6 +17,22 @@
   <link rel="icon" type="image/png" href="noahpepe.png" />
   <style>
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.noah-overlay {
+  max-width: 150px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
     html {
   scroll-behavior: smooth;
 }
@@ -527,6 +543,17 @@ body {
     line-height: 1.2;
     text-align: center;
   }
+.header-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.noah-overlay {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
   .rain-button {
     width: 80%;
     justify-content: center;
@@ -614,15 +641,19 @@ body {
     }
   </script>
 </div>
-
+  
 <header>
-  <div class="title">
-    <span class="frog-name">NOAH PEPE</span><br />
-    <span class="title-tagline">
-      The <span class="glow-rain flicker-effect">$RAIN</span> Maker
-    </span>
+  <div class="header-content">
+    <img src="noah1.png" alt="Noah Pepe" class="noah-overlay" />
+    <div class="title">
+      <span class="frog-name">NOAH PEPE</span><br />
+      <span class="title-tagline">
+        The <span class="glow-rain flicker-effect">$RAIN</span> Maker
+      </span>
+    </div>
   </div>
 </header>
+
 
    <div class="link-buttons">
      <a href="https://t.me/makeitrainbuildtheark" class="rain-button telegram" target="_blank">
