@@ -546,16 +546,14 @@ body {
     line-height: 1.2;
     text-align: center;
   }
-.header-content {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  .header-content {
+    flex-direction: column;
+  }
 
-.noah-overlay {
-  max-width: 100px;
-  margin-bottom: 1rem;
-}
+  .noah-overlay {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+  }
 
   .rain-button {
     width: 80%;
@@ -642,17 +640,14 @@ body {
       drop.style.animationDelay = Math.random() * 5 + 's';
       document.querySelector('.rain').appendChild(drop);
     }
-  </script>
+</script>
 </div>
-  
 <header>
   <div class="header-content">
-    <img src="noah-1.png" alt="Noah Pepe" class="noah-overlay" />
+    <img src="noah1.png" alt="Noah Pepe" class="noah-overlay" />
     <div class="title">
-      <span class="frog-name">NOAH PEPE</span><br />
-      <span class="title-tagline">
-        The <span class="glow-rain flicker-effect">$RAIN</span> Maker
-      </span>
+      <span class="frog-name">Noah Pepe</span>
+      <span class="title-tagline bold-blue">The <span class="shimmer">$RAIN</span> Maker</span>
     </div>
   </div>
 </header>
