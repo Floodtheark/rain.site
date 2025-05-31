@@ -155,21 +155,25 @@
     transform: translateY(0);
   }
 }
-    .image-frame {
+
+.image-frame {
   display: inline-block;
-  padding: 10px;
-  border: 4px solid #1e90ff; /* Dodger Blue frame */
-  border-radius: 20px;
+  padding: 12px;
+  background: #5c4033; /* rich wood base */
+  border: 10px solid #8b5a2b; /* outer wood frame */
+  border-radius: 6px;
   box-shadow:
-    0 0 12px rgba(30, 144, 255, 0.5),
-    0 0 24px rgba(30, 144, 255, 0.3);
-  background-color: #0a0a0a; /* optional backdrop for contrast */
+    inset 0 0 5px rgba(0, 0, 0, 0.3),
+    2px 2px 12px rgba(0, 0, 0, 0.4); /* light depth shadow */
+  margin: 20px auto;
 }
 
 .hero-image {
   display: block;
-  max-width: 100%;
-  border-radius: 16px;
+  width: 250px;
+  border: 4px solid #d2b48c; /* lighter wood inner border */
+  border-radius: 3px;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
 }
 
 .stats-panel {
@@ -354,12 +358,6 @@ body {
       border-radius: 8px;
       cursor: pointer;
       text-decoration: none;
-      z-index: 1;
-      position: relative;
-    }
-    .hero-image {
-      width: 250px;
-      margin: 30px auto 20px;
       z-index: 1;
       position: relative;
     }
