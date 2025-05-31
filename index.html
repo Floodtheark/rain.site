@@ -186,33 +186,6 @@
   border-radius: 3px;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
 }
-  @keyframes scrollMemes {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
- 
-.meme-carousel {
-  background-color: #111;
-  min-height: 220px;
-  margin: 40px auto;
-  width: 90%;
-  max-width: 600px;
-  border: 4px solid #1e90ff;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(30,144,255,0.4);
-}
-
-.carousel-track {
-  display: flex;
-  width: max-content;
-  animation: scrollMemes 20s linear infinite;
-}
-
-.carousel-track img {
-  width: 300px;
-  height: auto;
-  border: 2px solid red;
-}
     
 .stats-panel {
   position: relative;
@@ -509,24 +482,6 @@ body {
   <div class="image-frame">
    <img src="noah-pepe.png" alt="Noah Pepe" class="hero-image">
   </div>
-
-      <!-- BEGIN: Meme Carousel Test Block (No Styling Dependencies) -->
-<div style="background: #222; padding: 20px; margin: 20px auto; max-width: 600px; border: 2px solid white;">
-  <h3 style="color: white;">🚨 Meme Carousel Test Block</h3>
-  <img src="noah-pepe.png" alt="Test image" style="width: 100px; border: 2px solid red;">
-  <img src="meme2.png" alt="Meme 2" style="width: 100px; border: 2px solid lime;">
-</div>
-<!-- END: Meme Carousel Test Block -->
-  
-  <div class="meme-carousel">
-   <div class="carousel-track">
-     <img src="meme6.png" alt="meme6">
-     <img src="meme2.png" alt="meme2">
-     <img src="meme3.png" alt="meme3">
-     <img src="meme4.png" alt="meme4">
-     <img src="meme5.png" alt="meme5">
-  </div>
- </div>
 
   <section class="stats-panel">
   <h2>$RAIN Live Stats</h2>
