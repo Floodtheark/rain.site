@@ -334,6 +334,48 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
+    .team-section {
+  padding: 60px 20px;
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+}
+
+.team-section h2 {
+  color: #FFD700;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-card {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.4); /* Gold glow on hover */
+}
+
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #FFD700;
+}
     .coin-rain {
   position: fixed;
   top: 0;
@@ -598,7 +640,26 @@ body {
     <p>Here’s how the dev tax and redistribution are structured:</p>
     <img class="tokenomics-img" src="token.png" alt="Dev Tax Chart" />
   </div>
+  
+<section class="team-section">
+  <h2>🌧️ The Team Behind $RAIN</h2>
+  <div class="team-cards">
 
+    <div class="team-card">
+      <img src="noahpepe.png" alt="Noah Pepe" class="team-avatar" />
+      <h3>Noah Pepe</h3>
+      <p>The $RAIN Maker. Transparent dev. Ship builder. Meme dreamer. On a mission to flood CT with real value and vibes.</p>
+    </div>
+
+    <div class="team-card">
+      <img src="ark-icon.png" alt="Vision" class="team-avatar" />
+      <h3>The Vision</h3>
+      <p>We're building $RAIN with honesty, community, and long-term vision. No rugs. No hype games. Just consistent growth and clear value for real degens.</p>
+    </div>
+
+  </div>
+</section>
+  
   <div class="nav-overview">
     <a href="#what">What’s on this page</a>
     <a href="#rain">What is $RAIN</a>
