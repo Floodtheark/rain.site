@@ -16,6 +16,51 @@
   <title>Noah Pepe - The $RAIN Maker</title>
   <link rel="icon" type="image/png" href="noahpepe.png" />
   <style>
+
+    .link-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.rain-button {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+}
+
+.rain-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(0, 191, 255, 0.75);
+}
+
+/* Brand-specific colors */
+.telegram {
+  background: linear-gradient(to right, #0088cc, #229ed9);
+}
+
+.twitter {
+  background: linear-gradient(to right, #1da1f2, #00acee);
+}
+
+.pump {
+  background: linear-gradient(to right, #ffaa00, #ffcc00);
+  color: #222;
+}
+    
    .flicker-effect {
   animation: flickerPulse 4s infinite;
 }
@@ -392,20 +437,20 @@ body {
   </div>
 </header>
 
-    <div class="link-buttons">
-<a href="https://t.me/YOURGROUP" class="telegram-button">
-  <i class="fab fa-telegram"></i> Telegram
-</a>
+   <div class="link-buttons">
+     <a href="https://t.me/YOURGROUP" class="rain-button telegram" target="_blank">
+      <i class="fab fa-telegram"></i> Telegram
+     </a>
 
-<a href="https://x.com/NoahPepeRAIN" class="twitter-button">
-  <i class="fab fa-twitter"></i> X (Twitter)
-</a>
+     <a href="https://x.com/NoahPepeRAIN" class="rain-button twitter" target="_blank">
+      <i class="fab fa-twitter"></i> X (Twitter)
+     </a>
 
-<a href="https://pump.fun/YOURCOIN" class="pump-button">
-  <i class="fas fa-rocket"></i> Buy on Pump.fun
-</a>
+     <a href="https://pump.fun/YOURCOIN" class="rain-button pump" target="_blank">
+      <i class="fas fa-rocket"></i> Buy on Pump.fun
+     </a>
+   </div>
 
-    </div>
 
   <img class="hero-image" src="noah-pepe.png" alt="Noah Pepe" />
   <section class="stats-panel">
