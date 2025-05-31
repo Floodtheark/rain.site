@@ -155,6 +155,22 @@
     transform: translateY(0);
   }
 }
+    .image-frame {
+  display: inline-block;
+  padding: 10px;
+  border: 4px solid #1e90ff; /* Dodger Blue frame */
+  border-radius: 20px;
+  box-shadow:
+    0 0 12px rgba(30, 144, 255, 0.5),
+    0 0 24px rgba(30, 144, 255, 0.3);
+  background-color: #0a0a0a; /* optional backdrop for contrast */
+}
+
+.hero-image {
+  display: block;
+  max-width: 100%;
+  border-radius: 16px;
+}
 
 .stats-panel {
   position: relative;
@@ -451,8 +467,10 @@ body {
 </a>
    </div>
 
+  <div class="image-frame">
+   <img src="noahpepe.png" alt="Noah Pepe" class="hero-image">
+  </div>
 
-  <img class="hero-image" src="noah-pepe.png" alt="Noah Pepe" />
   <section class="stats-panel">
   <h2>$RAIN Live Stats</h2>
   <div class="stats-grid">
