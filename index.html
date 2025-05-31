@@ -113,6 +113,11 @@
   90%  { color: #00BFFF; }   /* Deep Sky Blue */
   100% { color: #1E90FF; }   /* Back to DodgerBlue */
 }
+.shimmer {
+  animation: colorCycle 4s infinite;
+  font-weight: bold;
+  text-shadow: 0 0 4px #1e90ff;
+}
 
 .glow-rain {
   font-weight: bold;
@@ -640,11 +645,13 @@ body {
 <header>
   <div class="header-content">
     <img src="noah1.png" alt="Noah Pepe" class="noah-overlay" />
-    <div class="title-wrapper">
-      <div class="frog-name">Noah Pepe</div>
-      <div class="title-tagline bold-blue">
-        The <span class="shimmer">$RAIN</span> Maker
-      </div>
+    <div class="title">
+    <span class="frog-name">Noah Pepe</span>
+    <span class="title-tagline">
+    The <span class="shimmer">$RAIN</span> Maker
+  </span>
+</div>
+
     </div>
   </div>
 </header>
