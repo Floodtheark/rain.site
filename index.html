@@ -204,18 +204,6 @@
   border-radius: 3px;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
 }
-    
-.stats-panel {
-  position: relative;
-  z-index: 2;
-  animation: fadeSlideUp 1.2s ease-out forwards;
-  animation-delay: 0.5s;
-}
-
-    .stats-panel {
-  position: relative;
-  z-index: 2;
-}
 
     @keyframes dripPulse {
   0% {
@@ -239,8 +227,11 @@
   border: 1px solid #00ffcc;
   animation: dripPulse 3s infinite ease-in-out;
 }
-
     .stats-panel {
+  position: relative;
+  z-index: 2;
+  animation: fadeSlideUp 1.2s ease-out forwards;
+  animation-delay: 0.5s;
   margin: 60px auto;
   padding: 40px 20px;
   max-width: 1000px;
