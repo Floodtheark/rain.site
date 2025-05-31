@@ -18,22 +18,32 @@
   <style>
 
 .header-content {
+.header-content {
   display: flex;
-  align-items: flex-end;    /* ✅ aligns image with bottom of title */
+  align-items: center;
   justify-content: center;
-  gap: 1.5rem;
   flex-wrap: wrap;
-  text-align: left;
+  gap: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .noah-overlay {
-  max-width: 280px;
+  max-width: 200px;
   height: auto;
   display: block;
   border: none;
   border-radius: 12px;
   box-shadow: none;
-  margin-top: 3rem; /* ✅ Moves image down independently */
+  margin: 0;
 }
 
     html {
@@ -544,15 +554,15 @@ body {
     padding-top: 0.75rem;
     margin-bottom: 1.25rem;
     line-height: 1.2;
+    align-items: center;
     text-align: center;
   }
-  .header-content {
+.header-content {
     flex-direction: column;
   }
 
   .noah-overlay {
-    margin-top: 1rem;
-    margin-bottom: -1rem;
+    margin-bottom: -0.5rem;
   }
 
   .rain-button {
@@ -642,6 +652,7 @@ body {
     }
 </script>
 </div>
+  
 <header>
   <div class="header-content">
     <img src="noah1.png" alt="Noah Pepe" class="noah-overlay" />
@@ -651,6 +662,7 @@ body {
     </div>
   </div>
 </header>
+
 
    <div class="link-buttons">
      <a href="https://t.me/makeitrainbuildtheark" class="rain-button telegram" target="_blank">
