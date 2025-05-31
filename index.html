@@ -19,11 +19,11 @@
 
 .header-content {
   display: flex;
+  align-items: flex-end;    /* ✅ aligns image with bottom of title */
   justify-content: center;
-  gap: 4rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   text-align: left;
-  align-items: flex-start; /* ✅ This allows different vertical placement */
 }
 
 .noah-overlay {
@@ -34,12 +34,6 @@
   border-radius: 12px;
   box-shadow: none;
   margin-top: 3rem; /* ✅ Moves image down independently */
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
     html {
@@ -651,14 +645,17 @@ body {
   </script>
 </div>
   
-<div class="header-content">
-  <img src="noah1.png" alt="Noah Pepe" class="noah-overlay" />
-  <div class="title">
-    <span class="frog-name">Noah Pepe</span>
-    <span class="title-tagline bold-blue">The <span class="shimmer">$RAIN</span> Maker</span>
+<header>
+  <div class="header-content">
+    <img src="noah-1.png" alt="Noah Pepe" class="noah-overlay" />
+    <div class="title">
+      <span class="frog-name">NOAH PEPE</span><br />
+      <span class="title-tagline">
+        The <span class="glow-rain flicker-effect">$RAIN</span> Maker
+      </span>
+    </div>
   </div>
-</div>
-
+</header>
 
    <div class="link-buttons">
      <a href="https://t.me/makeitrainbuildtheark" class="rain-button telegram" target="_blank">
